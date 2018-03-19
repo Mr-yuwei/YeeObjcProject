@@ -1,0 +1,6 @@
+
+platform :ios, "7.0"
+
+target 'AwesomeIntroGuideView' do
+    pod 'AwesomeIntroGuideView',:path => '../'
+end

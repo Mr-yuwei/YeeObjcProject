@@ -1,0 +1,16 @@
+PODS:
+  - AwesomeIntroGuideView (1.0.9)
+
+DEPENDENCIES:
+  - AwesomeIntroGuideView (from `../`)
+
+EXTERNAL SOURCES:
+  AwesomeIntroGuideView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AwesomeIntroGuideView: a190b769efb90b8b3b9b5cdf77ba09c588fad484
+
+PODFILE CHECKSUM: 7fab88322b354a5a93bd4f626898bb887c16894c
+
+COCOAPODS: 1.4.0
