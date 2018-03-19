@@ -40,7 +40,11 @@
     GuideObject *object4=[[GuideObject alloc] init];
     object4.targetViewFrame = CGRectMake(90, 450, 60, 60);
     object4.targetViewInset = UIEdgeInsetsMake(0, 6, 8, 7);
-    [YeeGuideView ShowGuideViewWithObjects:@[object1,object2,object3,object4] InView:self.view];
+    
+    [YeeGuideView ShowGuideViewWithObjects:@[object1,object2,object3,object4] Style:GuideViewDefaultStyle skipBtnEnable:YES InView:self.view];
+    
+    
+  //  [YeeGuideView ShowGuideViewWithObjects:@[object1,object2,object3,object4] InView:self.view];
     
 
 //    [self  addShapeLayer];

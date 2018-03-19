@@ -13,8 +13,8 @@
 @property(nonatomic,retain)UIButton       *skipButton;// skip/know btn
 @property(nonatomic,retain)NSArray        *objectItems;
 @property(nonatomic,assign)NSInteger      currentIndex;
-@property(nonatomic,assign)GuideViewStyle  viewStyle;
-@property(nonatomic,assign)GuideViewSkipBtnStyle skipBtnStyle;
+@property(nonatomic,assign)GuideViewStyle viewStyle;
+@property(nonatomic,assign)BOOL           skipBtnEnable;
 @end
 @implementation YeeGuideView
 #pragma mark   method
@@ -24,29 +24,29 @@
     
     
 }
-+(void)ShowGuideViewWithObjects:(NSArray<GuideObject *>*)objects Style:(GuideViewStyle)viewStyle skipBtnStyle:(GuideViewSkipBtnStyle)btnStyle  InView:(UIView*)inView
++(void)ShowGuideViewWithObjects:(NSArray<GuideObject *>*)objects Style:(GuideViewStyle)viewStyle skipBtnEnable:(BOOL)btnEnable  InView:(UIView*)inView;
 {
     if (inView == nil) inView = [[UIApplication sharedApplication].windows lastObject];
-     YeeGuideView *guideView=[[YeeGuideView alloc]  initWithFrame:inView.bounds objects:objects Style:viewStyle btnStyle:btnStyle  withContainView:inView];
+    YeeGuideView *guideView=[[YeeGuideView alloc] initWithFrame:inView.bounds objects:objects Style:viewStyle btnEnable:btnEnable withContainView:inView];
      [inView addSubview:guideView];
 }
 +(void)ShowGuideViewWithObjects:(NSArray<GuideObject *>*)objects Style:(GuideViewStyle)viewStyle InView:(UIView*)inView
 {
-     [YeeGuideView ShowGuideViewWithObjects:objects Style:viewStyle skipBtnStyle:GuideViewSkipBtnNoneStyle InView:inView];
+     [YeeGuideView ShowGuideViewWithObjects:objects Style:viewStyle skipBtnEnable:NO InView:inView];
 }
 +(void)ShowGuideViewWithObjects:(NSArray<GuideObject *>*)objects InView:(UIView*)inView
 {
     [YeeGuideView ShowGuideViewWithObjects:objects Style:GuideViewDefaultStyle InView:inView];
 }
--(instancetype)initWithFrame:(CGRect)frame objects:(NSArray<GuideObject *>*)objects Style:(GuideViewStyle)viewStyle  btnStyle:(GuideViewSkipBtnStyle)skipBtnStyle   withContainView:(UIView *)inView{
+-(instancetype)initWithFrame:(CGRect)frame objects:(NSArray<GuideObject *>*)objects Style:(GuideViewStyle)viewStyle  btnEnable:(BOOL)skipEnable   withContainView:(UIView *)inView{
     
     if (self=[super initWithFrame:inView.bounds])
     {
-        NSAssert(objects.count>0, @"(NSArray<GuideObject *>*)objects  must be not nil");
+        NSAssert(objects.count>0,@"(NSArray<GuideObject *>*)objects  must be not nil");
         self.containView=inView;
         self.objectItems=objects;
         self.viewStyle =viewStyle;
-        self.skipBtnStyle = skipBtnStyle;
+        self.skipBtnEnable = skipEnable;
         // 配置初始化视图
         [self setup];
     }
@@ -57,7 +57,7 @@
 {
     [self setBackgroundColor:[UIColor clearColor]];
     [self.layer addSublayer:self.maskLayer];
-    if (self.skipBtnStyle!=GuideViewSkipBtnNoneStyle)[self addSubview:self.skipButton];
+    if (self.skipBtnEnable==YES)[self addSubview:self.skipButton];
     self.currentIndex =0;
     [self goToCoachMarkIndexed:self.currentIndex];//
     UITapGestureRecognizer *tapGes=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickGuideViewTodoNextGes:)];
@@ -67,7 +67,7 @@
 -(void)clickGuideViewTodoNextGes:(UIGestureRecognizer*)ges
 {
     self.currentIndex++;
-    [self  goToCoachMarkIndexed:self.currentIndex];
+    [self goToCoachMarkIndexed:self.currentIndex];
 }
 #pragma mark main method
 //递归进入这个方法
@@ -92,6 +92,22 @@
 #pragma mark update 
 -(void)update_subViewsConstanit:(GuideObject*)object{
     
+    GuideViewSkipBtnStyle btnStyle = object.skipBtnStype;
+    if (btnStyle==GuideViewSkipBtnTopStyle) {
+        
+        
+        
+        
+    }else if (btnStyle==GuideViewSkipBtnBottomStyle){
+        
+        
+    }else if (btnStyle ==GuideViewSkipBtnLeftStyle){
+        
+        
+    }else if (btnStyle ==GuideViewSkipBtnRightStyle){
+        
+        
+    }
     
 }
 #pragma mark removeObject
@@ -116,6 +132,7 @@
     {
         _skipButton=[UIButton buttonWithType:UIButtonTypeCustom];
         [_skipButton setTitle:@"知道了" forState:UIControlStateNormal];
+        //_skipButton
         [_skipButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         _skipButton .titleLabel.font =[UIFont systemFontOfSize:14];
     }

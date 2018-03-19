@@ -16,7 +16,6 @@ typedef NS_ENUM(NSInteger,GuideViewStyle)
 };
 typedef NS_ENUM(NSInteger,GuideViewSkipBtnStyle)
 {
-    GuideViewSkipBtnNoneStyle,
     GuideViewSkipBtnTopStyle,
     GuideViewSkipBtnBottomStyle,
     GuideViewSkipBtnLeftStyle,
