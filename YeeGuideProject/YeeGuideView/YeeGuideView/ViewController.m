@@ -23,16 +23,19 @@
     [super viewDidLoad];
     
     [self.view setBackgroundColor:[UIColor whiteColor]];
-    
+    self.title=@"test2";
+   // self.edgesForExtendedLayout = UIRectEdgeNone;
     [self Add_OwnView];
     
     [self  make_constains];
-    
+ 
     GuideObject *object1=[[GuideObject alloc] init];
-    object1.targetViewFrame = CGRectMake(100, 56, 60, 45);
+    object1.targetViewFrame = CGRectMake(100,200, 60, 45);
     object1.targetViewInset = UIEdgeInsetsMake(2, 3, 2, 3);
+    object1.introduce =@"txt_feature_post_activity_4.1.png";
     GuideObject *object2=[[GuideObject alloc] init];
     object2.targetViewFrame =CGRectMake(59, 200, 69, 23);
+    object2.introduce =@"txt_feature_post_activity_4.1.png";
     object2.targetViewInset = UIEdgeInsetsMake(0, 0, 0, 0);
     GuideObject *object3=[[GuideObject alloc] init];
     object3.targetViewFrame = CGRectMake(40, 230, 60, 60);
@@ -40,8 +43,11 @@
     GuideObject *object4=[[GuideObject alloc] init];
     object4.targetViewFrame = CGRectMake(90, 450, 60, 60);
     object4.targetViewInset = UIEdgeInsetsMake(0, 6, 8, 7);
-    
-    [YeeGuideView ShowGuideViewWithObjects:@[object1,object2,object3,object4] Style:GuideViewDefaultStyle skipBtnEnable:YES InView:self.view];
+    GuideObject *object5=[[GuideObject alloc] init];
+    object5.introduce=@"txt_feature_post_activity_4.1.png";
+    object5.introduceAlignmentPriority =EAFeatureItemAlignmentBottomFirst;
+    object5.targetViewFrame = CGRectMake(90, 700, 60, 60);
+    [YeeGuideView ShowGuideViewWithObjects:@[object1,object2,object3,object4,object5] Style:GuideViewDefaultStyle skipBtnEnable:YES InView:nil];
     
     
   //  [YeeGuideView ShowGuideViewWithObjects:@[object1,object2,object3,object4] InView:self.view];
@@ -62,7 +68,7 @@
 }
 -(void)make_constains
 {
-    [m_pcontentView setFrame:CGRectMake(100, 56, 60, 45)];
+    [m_pcontentView setFrame:CGRectMake(100,150, 60, 45)];
     [m_pLable setFrame:CGRectMake(59, 200, 69, 23)];
 }
 -(void)addShapeLayer{

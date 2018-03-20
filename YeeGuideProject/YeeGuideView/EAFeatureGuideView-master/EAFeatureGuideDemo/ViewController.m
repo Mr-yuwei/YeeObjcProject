@@ -88,7 +88,7 @@
 //    EAFeatureItem *item8 = [[EAFeatureItem alloc] initWithFocusView:self.leftView focusCornerRadius:0 focusInsets:UIEdgeInsetsZero];
     item8.introduce = @"txt_feature_post_activity_4.1.png";
     
-    [self.navigationController.view showWithFeatureItems:@[item, item2,item3,item4,item5,item6, item8] saveKeyName:@"button" inVersion:nil];
+    [self.navigationController.view showWithFeatureItems:@[item, item2,item3,item4,item5,item6, item8] saveKeyName:@"button" inVersion:@"1.0.0"];
 }
 
 - (void)dealloc {

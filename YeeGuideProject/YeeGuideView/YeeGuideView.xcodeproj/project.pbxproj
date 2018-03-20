@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		888C1ACB206098240037DFD8 /* ViewControllerTest1.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C1ACA206098240037DFD8 /* ViewControllerTest1.m */; };
+		888C1ACE20609BAD0037DFD8 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C1ACD20609BAD0037DFD8 /* TabBarViewController.m */; };
 		88F805A6205CF4C500E22020 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F805A5205CF4C500E22020 /* AppDelegate.m */; };
 		88F805A9205CF4C500E22020 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F805A8205CF4C500E22020 /* ViewController.m */; };
-		88F805AC205CF4C500E22020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F805AA205CF4C500E22020 /* Main.storyboard */; };
 		88F805AE205CF4C500E22020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F805AD205CF4C500E22020 /* Assets.xcassets */; };
 		88F805B1205CF4C500E22020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F805AF205CF4C500E22020 /* LaunchScreen.storyboard */; };
 		88F805B4205CF4C500E22020 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F805B3205CF4C500E22020 /* main.m */; };
@@ -37,12 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		888C1AC9206098240037DFD8 /* ViewControllerTest1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerTest1.h; sourceTree = "<group>"; };
+		888C1ACA206098240037DFD8 /* ViewControllerTest1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTest1.m; sourceTree = "<group>"; };
+		888C1ACC20609BAD0037DFD8 /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		888C1ACD20609BAD0037DFD8 /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		88F805A1205CF4C500E22020 /* YeeGuideView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YeeGuideView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F805A4205CF4C500E22020 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		88F805A5205CF4C500E22020 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		88F805A7205CF4C500E22020 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		88F805A8205CF4C500E22020 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		88F805AB205CF4C500E22020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88F805AD205CF4C500E22020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88F805B0205CF4C500E22020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88F805B2205CF4C500E22020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,15 +111,18 @@
 		88F805A3205CF4C500E22020 /* YeeGuideView */ = {
 			isa = PBXGroup;
 			children = (
+				888C1ACC20609BAD0037DFD8 /* TabBarViewController.h */,
+				888C1ACD20609BAD0037DFD8 /* TabBarViewController.m */,
+				88F805A7205CF4C500E22020 /* ViewController.h */,
+				88F805A8205CF4C500E22020 /* ViewController.m */,
+				888C1AC9206098240037DFD8 /* ViewControllerTest1.h */,
+				888C1ACA206098240037DFD8 /* ViewControllerTest1.m */,
 				88F805D9205D0D4600E22020 /* YeeGuideView.h */,
 				88F805DA205D0D4600E22020 /* YeeGuideView.m */,
 				88F805D6205D0D2400E22020 /* GuideObject.h */,
 				88F805D7205D0D2400E22020 /* GuideObject.m */,
 				88F805A4205CF4C500E22020 /* AppDelegate.h */,
 				88F805A5205CF4C500E22020 /* AppDelegate.m */,
-				88F805A7205CF4C500E22020 /* ViewController.h */,
-				88F805A8205CF4C500E22020 /* ViewController.m */,
-				88F805AA205CF4C500E22020 /* Main.storyboard */,
 				88F805AD205CF4C500E22020 /* Assets.xcassets */,
 				88F805AF205CF4C500E22020 /* LaunchScreen.storyboard */,
 				88F805B2205CF4C500E22020 /* Info.plist */,
@@ -250,7 +257,6 @@
 			files = (
 				88F805B1205CF4C500E22020 /* LaunchScreen.storyboard in Resources */,
 				88F805AE205CF4C500E22020 /* Assets.xcassets in Resources */,
-				88F805AC205CF4C500E22020 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				888C1ACB206098240037DFD8 /* ViewControllerTest1.m in Sources */,
 				88F805A9205CF4C500E22020 /* ViewController.m in Sources */,
+				888C1ACE20609BAD0037DFD8 /* TabBarViewController.m in Sources */,
 				88F805D8205D0D2400E22020 /* GuideObject.m in Sources */,
 				88F805DB205D0D4600E22020 /* YeeGuideView.m in Sources */,
 				88F805B4205CF4C500E22020 /* main.m in Sources */,
@@ -315,14 +323,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		88F805AA205CF4C500E22020 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88F805AB205CF4C500E22020 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		88F805AF205CF4C500E22020 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -445,10 +445,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34TTMZE623;
 				INFOPLIST_FILE = YeeGuideView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Yee.YeeGuideView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,10 +460,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34TTMZE623;
 				INFOPLIST_FILE = YeeGuideView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Yee.YeeGuideView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

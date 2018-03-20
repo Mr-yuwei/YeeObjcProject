@@ -14,8 +14,6 @@
     if (self = [super init])
     {
         _targetViewInset    = UIEdgeInsetsZero;
-        _describeLableFont  = [UIFont systemFontOfSize:12];
-        _describeLableColor = [UIColor whiteColor];
         _buttonTitle        = @"知道了";
         _buttonTitleColor   = [UIColor whiteColor];
         _skipBtnStype       = GuideViewSkipBtnTopStyle;
