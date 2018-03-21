@@ -28,10 +28,13 @@ object4.introduce =@"介绍开始，新的功能";
 object4.cornerRadius =22.5;
 
 [FeatureGuideView showGuideViewWithObjects:@[object4,object1,object2,object3] InView:self.tabBarController.view];
+
+[FeatureGuideView showGuideViewWithObjects:@[object4,object1,object2,object3] version:@"1.0.0" identify:NSStringFromClass([self class]) InView:self.tabBarController.view];
+
 ```
 
 ##### 效果如下
-![Simulator Screen Shot - iPhone X - 2018-03-21 at 15.59.05.png](https://upload-images.jianshu.io/upload_images/1488651-c6c7168b528985c2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Simulator Screen Shot - iPhone X - 2018-03-21 at 15.59.05.png](https://upload-images.jianshu.io/upload_images/1488651-e0cd78634f7224fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ##### 后续添加功能：
 1.说明文字支持富文本 <br>
 2.特定条件显示控制

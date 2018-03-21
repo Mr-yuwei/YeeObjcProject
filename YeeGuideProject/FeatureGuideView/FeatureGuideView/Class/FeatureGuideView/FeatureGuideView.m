@@ -22,15 +22,16 @@
 @property(nonatomic,retain)NSArray        *objectItems;
 @property(nonatomic,assign)NSInteger      currentIndex;
 @end
-
 @implementation FeatureGuideView
-+(BOOL)onlyShowGuideViewInOnlyVersion:(NSString*)appVersion
++(BOOL)CheckGuideViewInOnlyVersion:(NSString*)appVersion indentify:(NSString*)Indentifystring
 {
     //只在特定版本才会显示
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     NSString *app_Version = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
-    if ([appVersion  isEqualToString:app_Version])
+    bool isExit = [[NSUserDefaults standardUserDefaults] boolForKey:[Indentifystring stringByAppendingString:@"_FeatureGuideView"]];
+    if ([appVersion isEqualToString:app_Version]&&isExit==NO)
     {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:[Indentifystring stringByAppendingString:@"_FeatureGuideView"]];
         return YES;
     }
     return NO;
@@ -45,6 +46,16 @@
         self.containView = nil;
         [self removeFromSuperview];
     }];
+}
++(FeatureGuideView*)showGuideViewWithObjects:(NSArray<FeatureGuideObject *>*)objects version:(NSString*)appversion identify:(NSString*)identifyString InView:(UIView*)inView
+{
+    if ([FeatureGuideView CheckGuideViewInOnlyVersion:appversion indentify:identifyString])
+    {
+      return [FeatureGuideView showGuideViewWithObjects:objects InView:inView];
+    }else
+    {
+        return [FeatureGuideView new];
+    }
 }
 +(FeatureGuideView*)showGuideViewWithObjects:(NSArray<FeatureGuideObject *>*)objects  InView:(UIView*)inView
 {

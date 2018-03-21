@@ -34,10 +34,12 @@ typedef NS_ENUM(NSInteger,FeatureGuideViewStyle)
 @end
 
 @interface FeatureGuideView : UIView
-
-//填充颜色
 @property(nonatomic,retain)UIColor *fillColor;
 @property(nonatomic,assign)CGFloat opacity;
+
++(BOOL)CheckGuideViewInOnlyVersion:(NSString*)appVersion indentify:(NSString*)Indentifystring;
+
++(FeatureGuideView*)showGuideViewWithObjects:(NSArray<FeatureGuideObject *>*)objects version:(NSString*)appversion  identify:(NSString*)identifyString   InView:(UIView*)inView;
 
 +(FeatureGuideView*)showGuideViewWithObjects:(NSArray<FeatureGuideObject *>*)objects  InView:(UIView*)inView;
 

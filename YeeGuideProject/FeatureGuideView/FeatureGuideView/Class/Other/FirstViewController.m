@@ -82,8 +82,8 @@
      */
    // [FeatureGuideView showGuideViewWithObjects:@[object4,object1,object2,object3] InView:self.view];
    // [FeatureGuideView showGuideViewWithObjects:@[object4,object1,object2,object3] InView:self.navigationController.view];
-   
-   [FeatureGuideView showGuideViewWithObjects:@[object4,object1,object2,object3] InView:self.tabBarController.view];
+   //showGuideViewWithObjects:@[object4,object1,object2,object3] InView:self.tabBarController.view
+    [FeatureGuideView showGuideViewWithObjects:@[object4,object1,object2,object3] version:@"1.0.0" identify:NSStringFromClass([self class]) InView:self.tabBarController.view];
 }
 -(void)clickRightAction:(UIBarButtonItem *)item{
     
