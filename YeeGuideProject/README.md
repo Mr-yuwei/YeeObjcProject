@@ -1,7 +1,7 @@
 # YeeGuideProject
 ### 转载请注明出处
 
-1.本工程在EAFeatureGuideView的基础上,将FeatureGuideView以实例对象的形式,更容易控制对象生命周期。<hr>
+1.本工程在EAFeatureGuideView的基础上,将FeatureGuideView以实例对象的形式,更容易控制对象生命周期。<br>
 2.FeatureGuideView现在支持点击屏幕进入下一步操作。
 
 ##### 用法
