@@ -14,8 +14,6 @@
 		888C1B07206109620037DFD8 /* FeatureGuideViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C1B06206109620037DFD8 /* FeatureGuideViewTests.m */; };
 		888C1B12206109620037DFD8 /* FeatureGuideViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C1B11206109620037DFD8 /* FeatureGuideViewUITests.m */; };
 		888C1B2420610A3E0037DFD8 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C1B2320610A3E0037DFD8 /* TabBarViewController.m */; };
-		888C1B2720610A830037DFD8 /* icon_ea_indicator@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888C1B2520610A830037DFD8 /* icon_ea_indicator@3x.png */; };
-		888C1B2820610A830037DFD8 /* icon_ea_indicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888C1B2620610A830037DFD8 /* icon_ea_indicator@2x.png */; };
 		888C1B2B20610AA20037DFD8 /* FeatureGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C1B2A20610AA20037DFD8 /* FeatureGuideView.m */; };
 		888C1B2E20610B030037DFD8 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C1B2D20610B030037DFD8 /* FirstViewController.m */; };
 		888C1B3120610B140037DFD8 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888C1B3020610B140037DFD8 /* SecondViewController.m */; };
@@ -54,8 +52,6 @@
 		888C1B13206109620037DFD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		888C1B2220610A3E0037DFD8 /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		888C1B2320610A3E0037DFD8 /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
-		888C1B2520610A830037DFD8 /* icon_ea_indicator@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_ea_indicator@3x.png"; sourceTree = "<group>"; };
-		888C1B2620610A830037DFD8 /* icon_ea_indicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_ea_indicator@2x.png"; sourceTree = "<group>"; };
 		888C1B2920610AA20037DFD8 /* FeatureGuideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureGuideView.h; sourceTree = "<group>"; };
 		888C1B2A20610AA20037DFD8 /* FeatureGuideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureGuideView.m; sourceTree = "<group>"; };
 		888C1B2C20610B030037DFD8 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
@@ -153,8 +149,6 @@
 		888C1B2020610A030037DFD8 /* FeatureGuideView */ = {
 			isa = PBXGroup;
 			children = (
-				888C1B2620610A830037DFD8 /* icon_ea_indicator@2x.png */,
-				888C1B2520610A830037DFD8 /* icon_ea_indicator@3x.png */,
 				888C1B2920610AA20037DFD8 /* FeatureGuideView.h */,
 				888C1B2A20610AA20037DFD8 /* FeatureGuideView.m */,
 			);
@@ -280,10 +274,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				888C1B2720610A830037DFD8 /* icon_ea_indicator@3x.png in Resources */,
 				888C1AFA206109620037DFD8 /* LaunchScreen.storyboard in Resources */,
 				888C1AF7206109620037DFD8 /* Assets.xcassets in Resources */,
-				888C1B2820610A830037DFD8 /* icon_ea_indicator@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

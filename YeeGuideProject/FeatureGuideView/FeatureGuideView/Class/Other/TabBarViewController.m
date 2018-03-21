@@ -21,11 +21,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self add_ownViewVCS];
 }
--(void)add_ownView
+-(void)add_ownViewVCS
 {
-    
-    
+    UINavigationController *VC1=[[UINavigationController alloc] initWithRootViewController:[FirstViewController new]];
+    VC1.title=@"first";
+    VC1.tabBarItem =[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemContacts tag:10];
+    UINavigationController *VC2=[[UINavigationController alloc] initWithRootViewController:[SecondViewController new]];
+    VC2.title=@"second";
+    VC2.tabBarItem =[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag:20];
+    self.viewControllers=@[VC1,VC2];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
