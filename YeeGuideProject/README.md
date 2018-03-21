@@ -23,12 +23,11 @@ object4.targetViewFrame  = CGRectMake(self.view.frame.size.width-50, self.naviga
 object4.introduce =@"介绍开始，新的功能";
 object3.buttonTitle =@"知道了";
 object4.cornerRadius =22.5;
+[FeatureGuideView showGuideViewWithObjects:@[object4,object1,object2,object3] InView:self.tabBarController.view];
 ```
-后续添加功能：
+##### 后续添加功能：
 1.说明文字支持富文本
-### 借鉴部分
-```
+##### 借鉴部分
 1.[AwesomeIntroGuideView](https://github.com/Bupterambition/AwesomeIntroGuideView)
 2.[EAFeatureGuideView](https://github.com/Easence/EAFeatureGuideView)
-```
 ##### 联系我：13137880636@163.com

@@ -72,7 +72,7 @@
     
     FeatureGuideObject *object4 =[[FeatureGuideObject alloc] init];
     object4.targetViewFrame  = CGRectMake(self.view.frame.size.width-50, self.navigationController.navigationBar.frame.origin.y, 45, 45) ;
-    object4.introduce =@"介绍开始，新的功能";
+    object4.introduce =@"txt_feature_post_activity_4.1.png";
     object3.buttonTitle =@"知道了";
     object4.cornerRadius =22.5;
     [FeatureGuideView showGuideViewWithObjects:@[object4,object1,object2,object3] InView:nil];
