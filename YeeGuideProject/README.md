@@ -1,8 +1,12 @@
 # YeeGuideProject
+### 转载请注明出处
+···
+1.本工程在EAFeatureGuideView的基础上,将FeatureGuideView以实例对象的形式,更容易控制对象声明周期。
+2.FeatureGuideView现在支持点击屏幕进入下一步操作。
 
-```
-应用新功能指示页
-```
+后续添加功能：
+1.说明文字支持富文本
+
 ### CAShapeLayer
 CAShapeLayer结合UIBezierPath画镂空效果
 ```
@@ -20,9 +24,7 @@ m_pLayer.fillColor = [UIColor blackColor].CGColor;
 
 ```
 
-
-
-### 借鉴部分 转载请注明出处
+### 借鉴部分
 ```
 1.[AwesomeIntroGuideView](https://github.com/Bupterambition/AwesomeIntroGuideView)
 2.[EAFeatureGuideView](https://github.com/Easence/EAFeatureGuideView)
