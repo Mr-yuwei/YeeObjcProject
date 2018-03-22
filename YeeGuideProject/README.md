@@ -47,7 +47,7 @@ object1.buttonTitle =@"知道了";
 ```
 
 ##### 效果如下
-![Simulator Screen Shot - iPhone X - 2018-03-21 at 15.59.05.png](https://upload-images.jianshu.io/upload_images/1488651-e0cd78634f7224fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<br>
+![Simulator Screen Shot - iPhone X - 2018-03-22 at 16.41.15.png](https://upload-images.jianshu.io/upload_images/1488651-ddc43abc5a1f6fcd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)<br>
 ![Simulator Screen Shot - iPhone X - 2018-03-22 at 16.37.07.png](https://upload-images.jianshu.io/upload_images/1488651-64f82e673b89c4e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ##### 后续添加功能：
