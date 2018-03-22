@@ -34,11 +34,10 @@
     VC2.tabBarItem =[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag:20];
     self.viewControllers=@[VC1,VC2];
 }
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
 /*
 #pragma mark - Navigation
 

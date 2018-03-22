@@ -24,11 +24,10 @@
 {
     [super viewDidLoad];
     self.title=@"first";
-    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.automaticallyAdjustsScrollViewInsets =NO;
     [self add_OwnView];
-    
     [self Add_FeatureGuideView];
-    
 }
 -(void)add_OwnView{
     
@@ -45,7 +44,6 @@
     m_pGreenView.layer.masksToBounds = YES;
     [m_pGreenView setBackgroundColor:[UIColor greenColor ]];
     [self.view addSubview:m_pGreenView];
-
     m_pGrayView =[[UIView alloc] initWithFrame:CGRectMake(35, self.view.frame.size.height-50, 45, 50)];
     [m_pGrayView setBackgroundColor:[UIColor grayColor ]];
     [self.view addSubview:m_pGrayView];
