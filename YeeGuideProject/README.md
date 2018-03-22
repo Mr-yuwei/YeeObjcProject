@@ -31,6 +31,19 @@ object4.cornerRadius =22.5;
 
 [FeatureGuideView showGuideViewWithObjects:@[object4,object1,object2,object3] version:@"1.0.0" identify:NSStringFromClass([self class]) InView:self.tabBarController.view];
 
+
+UITableViewCell
+
+//https://www.jianshu.com/p/103d6aac84b4
+TableViewCell *cell=[tableView cellForRowAtIndexPath:indexPath];
+CGRect targetFramefirst=[cell convertRect:cell.m_pEditBtn.frame toView:tableView];
+CGRect targetFrame     =[tableView convertRect:targetFramefirst toView:self.view];
+FeatureGuideObject *object1 =[[FeatureGuideObject alloc] init];
+object1.targetViewFrame = targetFrame;
+object1.introduce =@"介绍开始，新的功能";
+object1.buttonTitle =@"知道了";
+[FeatureGuideView showGuideViewWithObjects:@[object1] InView:self.tabBarController.view];
+
 ```
 
 ##### 效果如下

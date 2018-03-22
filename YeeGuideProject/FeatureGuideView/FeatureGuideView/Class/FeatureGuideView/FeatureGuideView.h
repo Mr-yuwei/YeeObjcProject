@@ -45,6 +45,8 @@ typedef NS_ENUM(NSInteger,FeatureGuideViewStyle)
 
 -(instancetype)initWithObjects:(NSArray<FeatureGuideObject *>*)objects InView:(UIView*)inView;
 
+-(void)removeObjectsFromContainViewAnimated:(BOOL)animate;
+
 -(void)removeObjectsFromContainView;
 
 @end

@@ -37,15 +37,27 @@
     return NO;
 }
 #pragma mark removeObject
--(void)removeObjectsFromContainView
+-(void)removeObjectsFromContainViewAnimated:(BOOL)animate
 {
+    if (animate==NO)
+    {
+        [self.skipButton removeFromSuperview];
+        self.containView = nil;
+        [self removeFromSuperview];
+        return;
+    }
     [UIView animateWithDuration:0.7 animations:^{
         self.alpha =0.0;
-    } completion:^(BOOL finished) {
+    } completion:^(BOOL finished)
+     {
         [self.skipButton removeFromSuperview];
         self.containView = nil;
         [self removeFromSuperview];
     }];
+}
+-(void)removeObjectsFromContainView
+{
+    [self removeObjectsFromContainViewAnimated :NO];
 }
 +(FeatureGuideView*)showGuideViewWithObjects:(NSArray<FeatureGuideObject *>*)objects version:(NSString*)appversion identify:(NSString*)identifyString InView:(UIView*)inView
 {
@@ -360,7 +372,7 @@
     FeatureGuideObject *object = self.objectItems[self.currentIndex];
     if (object.action)
     {
-        object.action(btn);
+        object.action(self);
     }
     self.currentIndex++;
     [self goToCoachMarkIndexed:self.currentIndex];

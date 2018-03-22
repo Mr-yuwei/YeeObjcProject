@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 #import "FeatureGuideView.h"
+#import "TableViewController.h"
 @interface SecondViewController ()
 {
     UIView *m_pRedView;
@@ -73,8 +74,17 @@
     FeatureGuideObject *object4 =[[FeatureGuideObject alloc] init];
     object4.targetViewFrame  = CGRectMake(self.view.frame.size.width-50, self.navigationController.navigationBar.frame.origin.y, 45, 45) ;
     object4.introduce =@"txt_feature_post_activity_4.1.png";
-    object3.buttonTitle =@"知道了";
+    object4.buttonTitle =@"知道了";
     object4.cornerRadius =22.5;
+    __weak typeof(self)weakself = self;
+    object4.action = ^(id sender)
+    {
+        [sender removeObjectsFromContainView];
+        __strong typeof(weakself)strongself =weakself;
+        TableViewController *tableVC =[TableViewController new];
+        tableVC.hidesBottomBarWhenPushed=YES;
+        [strongself.navigationController pushViewController:tableVC animated:YES];
+    };
     [FeatureGuideView showGuideViewWithObjects:@[object4,object1,object2,object3] InView:nil];
 }
 -(void)clickRightAction:(UIBarButtonItem *)item{
