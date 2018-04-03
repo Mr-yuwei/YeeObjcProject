@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ListTableViewController.h"
+#import "TabBarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,7 +19,7 @@
 {
     self.window =[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setBackgroundColor:[UIColor whiteColor]];
-    self.window.rootViewController =[[UINavigationController alloc] initWithRootViewController:[ListTableViewController new]];
+    self.window.rootViewController =[[TabBarViewController alloc] init];
     [self configureiOS11Version];
     [self.window makeKeyAndVisible];
     return YES;

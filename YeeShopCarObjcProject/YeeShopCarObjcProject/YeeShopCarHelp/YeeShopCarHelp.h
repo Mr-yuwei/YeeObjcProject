@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 @interface YeeShopCarHelp : NSObject
 
++(void)ShowCarAnimationFromPoint:(CGPoint)fromPoint ToPoint:(CGPoint)toPoint  object:(UIImage*)object duration:(double)duration ;
 @end

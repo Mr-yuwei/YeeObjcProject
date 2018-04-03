@@ -10,4 +10,9 @@
 
 @implementation YeeShopCarHelp
 
++(void)ShowCarAnimationFromPoint:(CGPoint)fromPoint ToPoint:(CGPoint)toPoint  object:(UIImage*)object duration:(double)duration{
+    
+    
+    
+}
 @end

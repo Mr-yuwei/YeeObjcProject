@@ -26,6 +26,9 @@
 		8835C5F7206F81940040C3D9 /* ListViewEntify.m in Sources */ = {isa = PBXBuildFile; fileRef = 8835C5F6206F81940040C3D9 /* ListViewEntify.m */; };
 		8835C5F8206F81940040C3D9 /* ListViewEntify.m in Sources */ = {isa = PBXBuildFile; fileRef = 8835C5F6206F81940040C3D9 /* ListViewEntify.m */; };
 		8835C5F9206F81940040C3D9 /* ListViewEntify.m in Sources */ = {isa = PBXBuildFile; fileRef = 8835C5F6206F81940040C3D9 /* ListViewEntify.m */; };
+		883A5D60207374BC00D5F403 /* ShowImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883A5D5F207374BC00D5F403 /* ShowImageViewController.m */; };
+		883A5D6C207378A100D5F403 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883A5D6B2073787C00D5F403 /* TabBarViewController.m */; };
+		883A5D6D207378BB00D5F403 /* UIBezierPathAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883A5D682073786000D5F403 /* UIBezierPathAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,12 @@
 		8835C5F1206F7EDD0040C3D9 /* YeeShopCarHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YeeShopCarHelp.m; sourceTree = "<group>"; };
 		8835C5F5206F81940040C3D9 /* ListViewEntify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewEntify.h; sourceTree = "<group>"; };
 		8835C5F6206F81940040C3D9 /* ListViewEntify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewEntify.m; sourceTree = "<group>"; };
+		883A5D5E207374BC00D5F403 /* ShowImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowImageViewController.h; sourceTree = "<group>"; };
+		883A5D5F207374BC00D5F403 /* ShowImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowImageViewController.m; sourceTree = "<group>"; };
+		883A5D682073786000D5F403 /* UIBezierPathAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathAnimationViewController.m; sourceTree = "<group>"; };
+		883A5D692073786000D5F403 /* UIBezierPathAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBezierPathAnimationViewController.h; sourceTree = "<group>"; };
+		883A5D6A2073787C00D5F403 /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		883A5D6B2073787C00D5F403 /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		CCDDFCE823652C0F873A57A6 /* Pods-YeeShopCarObjcProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YeeShopCarObjcProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YeeShopCarObjcProject/Pods-YeeShopCarObjcProject.debug.xcconfig"; sourceTree = "<group>"; };
 		D0FB82C98BACCC7553D85EBA /* Pods-YeeShopCarObjcProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YeeShopCarObjcProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-YeeShopCarObjcProject/Pods-YeeShopCarObjcProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,8 +156,14 @@
 				8835C5F6206F81940040C3D9 /* ListViewEntify.m */,
 				8835C5E6206F76800040C3D9 /* ListTableViewController.h */,
 				8835C5E7206F76800040C3D9 /* ListTableViewController.m */,
+				883A5D6A2073787C00D5F403 /* TabBarViewController.h */,
+				883A5D6B2073787C00D5F403 /* TabBarViewController.m */,
+				883A5D5E207374BC00D5F403 /* ShowImageViewController.h */,
+				883A5D5F207374BC00D5F403 /* ShowImageViewController.m */,
 				8835C5EB206F7EC30040C3D9 /* ListTableViewCell.h */,
 				8835C5EC206F7EC30040C3D9 /* ListTableViewCell.m */,
+				883A5D692073786000D5F403 /* UIBezierPathAnimationViewController.h */,
+				883A5D682073786000D5F403 /* UIBezierPathAnimationViewController.m */,
 				8835C5B7206F74500040C3D9 /* Assets.xcassets */,
 				8835C5B9206F74500040C3D9 /* LaunchScreen.storyboard */,
 				8835C5BC206F74500040C3D9 /* Info.plist */,
@@ -370,12 +385,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				883A5D6D207378BB00D5F403 /* UIBezierPathAnimationViewController.m in Sources */,
+				883A5D6C207378A100D5F403 /* TabBarViewController.m in Sources */,
 				8835C5BE206F74500040C3D9 /* main.m in Sources */,
 				8835C5B0206F74500040C3D9 /* AppDelegate.m in Sources */,
 				8835C5F2206F7EDD0040C3D9 /* YeeShopCarHelp.m in Sources */,
 				8835C5F7206F81940040C3D9 /* ListViewEntify.m in Sources */,
 				8835C5E8206F76800040C3D9 /* ListTableViewController.m in Sources */,
 				8835C5ED206F7EC30040C3D9 /* ListTableViewCell.m in Sources */,
+				883A5D60207374BC00D5F403 /* ShowImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
