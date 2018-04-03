@@ -46,6 +46,7 @@
     [self.view addSubview:m_pBlueView];
 
     
+    
 }
 -(void)clickResetBtn:(UIButton*)btn{
     
