@@ -10,11 +10,11 @@
 #import "YeeShopCarHelp.h"
 #import "ListTableViewCell.h"
 #import "ListViewEntify.h"
-@interface ListTableViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface ListTableViewController ()<UITableViewDataSource,UITableViewDelegate,ListTableViewCelldelegate>
 
 @property(nonatomic,retain)UITableView    *m_pTableView;
 @property(nonatomic,retain)NSMutableArray *m_pListArray;
-
+@property(nonatomic,retain)UIImageView    *m_pShopCarView;
 @end
 
 @implementation ListTableViewController
@@ -35,6 +35,10 @@
     self.m_pTableView.contentInset = UIEdgeInsetsMake(88, 0, 0, 0);
    [self.m_pTableView registerClass:[ListTableViewCell class] forCellReuseIdentifier:NSStringFromClass([ListTableViewCell class])];
    [self.view addSubview:self.m_pTableView];
+    self.m_pShopCarView=[[UIImageView alloc] init];
+    [self.m_pShopCarView setFrame:CGRectMake(45, self.view.frame.size.height-100, 45, 45)];
+    [self.m_pShopCarView setImage:[UIImage imageNamed:@"lch_icon_shopping"]];
+    [self.view addSubview:self.m_pShopCarView];
 }
 
 #pragma mark tableView delegate
@@ -46,11 +50,30 @@
     
     ListTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([ListTableViewCell class])];
     [cell configureCellData:self.m_pListArray[indexPath.row]];
+    cell.delegate = self;
+    cell.tag = indexPath.row;
     return  cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     return  230;
+}
+-(void)clickBtn:(UIButton*)btn withClickType:(TableViewClickType)type withEntify:(ListViewEntify*)entify inTableViewCell:(ListTableViewCell*)tableCell{
+    
+    ListViewEntify * newEntify =  self.m_pListArray[tableCell.tag];
+    newEntify.carNumber = entify.carNumber;
+    if (type==TableViewClickAddType) {
+       //在这里展示购物车动画
+        CGRect fromRect = [tableCell convertRect:tableCell.m_pAddBtn.frame toView:self.view];
+        
+     
+        //ShowCarAnimationFromPoint:fromRect.origin ToPoint: self.m_pShopCarView.frame.origin object: duration:.5 inView:self.view
+        [YeeShopCarHelp ShowCarAnimationFromPoint:fromRect.origin ToPoint:self.m_pShopCarView.frame.origin object:[UIImage imageNamed:@"Home_Versionf_ShoppingCart"] duration:.5 inView:self.view];
+        
+    }else{
+        
+        
+    }
 }
 -(void)getDataFromNetWork{
     
@@ -64,6 +87,7 @@
     }
     [self.m_pTableView reloadData];
 }
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

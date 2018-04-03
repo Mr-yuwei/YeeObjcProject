@@ -10,5 +10,5 @@
 #import <UIKit/UIKit.h>
 @interface YeeShopCarHelp : NSObject
 
-+(void)ShowCarAnimationFromPoint:(CGPoint)fromPoint ToPoint:(CGPoint)toPoint  object:(UIImage*)object duration:(double)duration ;
++(void)ShowCarAnimationFromPoint:(CGPoint)fromPoint ToPoint:(CGPoint)toPoint  object:(UIImage*)object duration:(double)duration inView:(UIView*)inView ;
 @end
