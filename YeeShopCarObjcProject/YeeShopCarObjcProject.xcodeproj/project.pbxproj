@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		471F417AB86CD2A72C7029C3 /* libPods-YeeShopCarObjcProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BAC1135FC2AC5559307AED5 /* libPods-YeeShopCarObjcProject.a */; };
+		8829D6EF2075CC7100D7EBA7 /* DashTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8829D6EE2075CC7100D7EBA7 /* DashTestView.m */; };
 		8835C5B0206F74500040C3D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8835C5AF206F74500040C3D9 /* AppDelegate.m */; };
 		8835C5B8206F74500040C3D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8835C5B7206F74500040C3D9 /* Assets.xcassets */; };
 		8835C5BB206F74500040C3D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8835C5B9206F74500040C3D9 /* LaunchScreen.storyboard */; };
@@ -50,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		2BAC1135FC2AC5559307AED5 /* libPods-YeeShopCarObjcProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YeeShopCarObjcProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8829D6ED2075CC7100D7EBA7 /* DashTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashTestView.h; sourceTree = "<group>"; };
+		8829D6EE2075CC7100D7EBA7 /* DashTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashTestView.m; sourceTree = "<group>"; };
 		8835C5AB206F74500040C3D9 /* YeeShopCarObjcProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YeeShopCarObjcProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8835C5AE206F74500040C3D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8835C5AF206F74500040C3D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 				8835C5AE206F74500040C3D9 /* AppDelegate.h */,
 				8835C5AF206F74500040C3D9 /* AppDelegate.m */,
 				8835C5F5206F81940040C3D9 /* ListViewEntify.h */,
+				8829D6ED2075CC7100D7EBA7 /* DashTestView.h */,
+				8829D6EE2075CC7100D7EBA7 /* DashTestView.m */,
 				8835C5F6206F81940040C3D9 /* ListViewEntify.m */,
 				8835C5E6206F76800040C3D9 /* ListTableViewController.h */,
 				8835C5E7206F76800040C3D9 /* ListTableViewController.m */,
@@ -387,6 +392,7 @@
 			files = (
 				883A5D6D207378BB00D5F403 /* UIBezierPathAnimationViewController.m in Sources */,
 				883A5D6C207378A100D5F403 /* TabBarViewController.m in Sources */,
+				8829D6EF2075CC7100D7EBA7 /* DashTestView.m in Sources */,
 				8835C5BE206F74500040C3D9 /* main.m in Sources */,
 				8835C5B0206F74500040C3D9 /* AppDelegate.m in Sources */,
 				8835C5F2206F7EDD0040C3D9 /* YeeShopCarHelp.m in Sources */,

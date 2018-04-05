@@ -36,7 +36,7 @@
    [self.m_pTableView registerClass:[ListTableViewCell class] forCellReuseIdentifier:NSStringFromClass([ListTableViewCell class])];
    [self.view addSubview:self.m_pTableView];
     self.m_pShopCarView=[[UIImageView alloc] init];
-    [self.m_pShopCarView setFrame:CGRectMake(45, self.view.frame.size.height-100, 45, 45)];
+    [self.m_pShopCarView setFrame:CGRectMake(45, self.view.frame.size.height-150, 45, 45)];
     [self.m_pShopCarView setImage:[UIImage imageNamed:@"lch_icon_shopping"]];
     [self.view addSubview:self.m_pShopCarView];
 }
@@ -65,10 +65,14 @@
     if (type==TableViewClickAddType) {
        //在这里展示购物车动画
         CGRect fromRect = [tableCell convertRect:tableCell.m_pAddBtn.frame toView:self.view];
+
+        UIImage *object =[UIImage imageNamed:@"lch_icon_reduce"];
+        //fromRect.origin
         
-     
-        //ShowCarAnimationFromPoint:fromRect.origin ToPoint: self.m_pShopCarView.frame.origin object: duration:.5 inView:self.view
-        [YeeShopCarHelp ShowCarAnimationFromPoint:fromRect.origin ToPoint:self.m_pShopCarView.frame.origin object:[UIImage imageNamed:@"Home_Versionf_ShoppingCart"] duration:.5 inView:self.view];
+       // self.m_pShopCarView.frame.origin
+        [YeeShopCarHelp ShowCarAnimationFromPoint:CGPointMake(fromRect.origin.x+object.size.width*0.5, fromRect.origin.y+object.size.height*0.5) ToPoint:CGPointMake(self.m_pShopCarView.center.x+object.size.width*0.5, self.m_pShopCarView.center.y+object.size.height*0.5) object:[UIImage imageNamed:@"Home_Versionf_ShoppingCart"] duration:.5 inView:self.view completion:^(BOOL finished) {
+            
+        }];
         
     }else{
         

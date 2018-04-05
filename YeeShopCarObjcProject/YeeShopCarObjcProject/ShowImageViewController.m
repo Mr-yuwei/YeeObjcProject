@@ -24,6 +24,9 @@
 {
     [super viewDidLoad];
     self.title=@"convertRect";
+    
+
+    
     [self add_OwnView];
     
     m_pRightBtn =[UIButton buttonWithType:UIButtonTypeCustom];
