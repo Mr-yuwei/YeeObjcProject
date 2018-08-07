@@ -18,9 +18,10 @@
 
 +(AFNDownloadManager*)downManager{
     static dispatch_once_t onceToken;
-    AFNDownloadManager *_manager = nil;
+    static AFNDownloadManager *_manager = nil;
     dispatch_once(&onceToken, ^{
         
+        _manager = [[AFNDownloadManager alloc] init];
     });
     return _manager;
 }
